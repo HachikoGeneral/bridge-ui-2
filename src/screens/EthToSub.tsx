@@ -138,7 +138,7 @@ const EthToSub = ({ className, ethProvider } : Props) => {
 		<Container className={className}>
 			<BlockInfo ethProvider={ethProvider}/>
 			<hr/>
-			<h2>Send ETH to SUB</h2>
+			<h2>Send ETH to ETH</h2>
 			<Grid>
 				<Grid.Row>
 					<Grid.Column width={2}/>
@@ -161,7 +161,7 @@ const EthToSub = ({ className, ethProvider } : Props) => {
 						<Icon name='arrow right'/>
 					</Grid.Column>
 					<Grid.Column className='accountCard' width={5}>
-						<div className='balance'>SUB account</div>
+						<div className='balance'>ETH account</div>
 						{!!receiverAddress && (
 							<>
 								<Identicon size={52} value={receiverAddress}/>
@@ -174,7 +174,7 @@ const EthToSub = ({ className, ethProvider } : Props) => {
 										withUnit: false
 									})}
 								>
-									{toSubBalance(receiverBalance)} SUB
+									{toSubBalance(receiverBalance)} ETH
 								</div>
 							</>
 						)}
