@@ -12,7 +12,7 @@ import ErrorMessage from './components/ErrorMessage';
 import Menu from './components/MenuBar';
 import { ApiPromiseContextProvider } from './context/ApiPromiseContext';
 import customTypes from './customTypes';
-import EthToSub from './screens/EthToSub';
+import EthToEth from './screens/EthToEth';
 
 // extend the existing window interface to tell it about your new ethereum property.
 declare global {
